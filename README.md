@@ -48,7 +48,13 @@ pause
 
 Replace `<username>` with your Windows username, `<path_to_script>` with the path to the directory containing `vault_backup.py`, `<source_directory>` with the path to your local Obsidian Vault directory, and `<destination_directory>` with the path to the remote backup directory.
 
-8. Open the Task Scheduler and create a new task to run `backup_vault.bat` on a weekly basis. Follow the instructions in the [official documentation](https://docs.microsoft.com/en-us/windows/win32/taskschd/task-scheduler-start-page) to create the task.
+8. To make it run automatically, we'll use Windows Task Scheduler
+	1. Open the Start menu and search for "Task Scheduler".
+	2. In Task Scheduler, click on "Create Basic Task" in the right panel.
+	3. Give your task a name, like "Obsidian Vault Backup", and click Next.
+	4. Choose how often you want the task to run. Select "Weekly" and click Next.
+	5. Choose the day and time you want the backup to occur, then click Next.
+	6. For the action, choose "Start a program" and click Next. g. In the "Program/script" field, enter the path to your Batch file.
 
 ## Usage
 
