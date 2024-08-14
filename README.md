@@ -52,15 +52,7 @@ Replace `<username>` with your Windows username, `<path_to_script>` with the pat
 
 ## Usage
 
-To run the script, open a command prompt and navigate to the directory containing `vault_backup.py`. Then, run the following command:
-
-```
-python vault_backup.py "<source_directory>" "<destination_directory>"
-```
-
-Replace `<source_directory>` with the path to your local Obsidian Vault directory, and `<destination_directory>` with the path to the remote backup directory.
-
-The script will automatically backup your Obsidian Vault to the remote location specified in the command-line arguments on a weekly basis. The progress of the backup will be displayed in the command prompt using the `tqdm` library.
+The script will automatically backup your Obsidian Vault to the remote location specified in the `vault_backup.py` script on a weekly basis. The progress of the backup will be displayed in the command prompt using the `tqdm` library.
 
 ## Troubleshooting
 
